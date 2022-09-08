@@ -8,6 +8,14 @@
 Принимает на вход один параметр: cost типа int
 Анализируя значение переданного параметра, возвращает рассчитанное количество миль (тип - int)
 Разместите следующий код в классе Main:
+public class Main {
+    public static void main(String[] args) {
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
